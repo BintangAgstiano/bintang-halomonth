@@ -221,7 +221,7 @@ color: rgba(128, 128, 128, 0.733);
   max-width: 1440px;
   background-color: white;
   min-height: 50px;
-  
+  z-index: 100 !important;
 display: flex;
 justify-content: start;
 padding-left: 25px;
@@ -233,20 +233,29 @@ font-size: .8rem;
   height: 90vh;
   max-width: 1440px;
   margin:0 auto;
-  background-color: #F6F8FC;
+  background-color: #eceff5d8;
   overflow: hidden;
  padding-top: 50px;
   overflow-y: scroll;
   padding-bottom: 60px !important;
 }
 .box-content-history{
-  margin: auto;
+
   height: 20px;
   background-color: #fff;
   min-height: 140px;
   box-shadow: 0 0 8px 1px rgba(0,0,0,.1);
 border-top: 3px solid #EB235C;
 position: relative;
+}
+.parent-box-ch{
+  margin: auto;
+  height: 20px;
+  min-height: 140px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
 }
 .imgH{
   position: absolute;
@@ -257,6 +266,7 @@ position: relative;
   justify-content: center;
   align-items: start;
   background-color: rgb(255, 255, 255);
+  left: 12px;
 }
 
 .imgH img{
@@ -269,12 +279,13 @@ position: relative;
   margin: auto;
   margin: 1px 0 !important;
 }
-.line-history .content-line{
-  width: .1px !important;
-  margin-right: -300px;
-  height: 100px;
+.content-line{
+  width: 10px !important;
+  height: 180px;
+  left: 3px;
+  top: -180px;
  border-right: 1px solid #EB235C;
- position: relative;
+ position: absolute;
 }
 .line-history .content-line .circle1H{
  width: 25px !important;
@@ -324,19 +335,20 @@ position: relative;
   right: 125px;
 }
 .tanggal{
-  margin-top: 50px;
+  margin-top: 45px;
   z-index: 9990;
-  position: relative;
+ 
   color: rgb(45, 47, 66);
-  margin-left: 15px;
+  margin-left: 30px;
 
 }
 .content-tanggal{
   margin-top: 5px;
   z-index: 9990;
-  position: relative;
+
   color: rgb(45, 47, 66);
-  margin-left: 15px;
+  margin-left: 30px;
+
 
 }
 .parent-clear{
@@ -350,3 +362,11 @@ margin: -20px auto 40px auto !important;
   background-color: #EB235C;
   color: white;
 }
+.circle-tes{
+  width: 25px !important;
+  height: 25px !important;
+  background-color:#F6F8FC;
+  border:8px solid #EB235C;
+  border-radius: 50px;
+
+ }
