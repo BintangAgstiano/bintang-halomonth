@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const PageIndex = () => {
     return (
 
@@ -11,7 +13,7 @@ const PageIndex = () => {
                         </div>
                     </div>
                     <div className="right-navbar">
-                        <button type="button" class="btn">History</button>
+                       <Link to={'/history'}> <button type="button" class="btn">History</button></Link>
                     </div>
                 </div>
             </section>
