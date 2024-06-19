@@ -10,6 +10,7 @@
 font-family: poppins;
 width: 100%;
 height: max-content;
+
 }
 #section1{
   width: 100%;
@@ -370,3 +371,46 @@ margin: -20px auto 40px auto !important;
   border-radius: 50px;
 
  }
+ input:focus{
+  outline: none !important;
+  background-color: none !important;
+  box-shadow: none !important;
+  border:1px solid #DEE2E6 !important;
+  outline: #DEE2E6 !important;
+ }
+ .halomonth{
+  height: 100vh !important;
+  width: 100%;
+  background-color: #EB235C;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  overflow-y: hidden !important;
+ }
+ .title-halomonth{
+  font-family: poppins;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.byName{
+  color: white;
+  font-size: .8rem;
+}
+.lineRotate{
+  background-color: #ffffff1c;
+  width: 50px;
+  height: 10000px;
+  position: absolute;
+  left: -500px;
+  rotate: 45deg;
+  animation: lineBergerak 5s;
+}
+@keyframes lineBergerak{
+0%{
+  left: -500px;
+}50%{
+  left: 2000px;
+}100%{
+  left: 2000px;
+}
+}
